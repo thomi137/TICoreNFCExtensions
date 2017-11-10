@@ -11,6 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+This Wrapper uses [CoreNFC](https://developer.apple.com/documentation/corenfc). CoreNFC requires iOS 11 so the wrapper or the example application won't work on older version of iOS. Furthermore, as by the [Specification](https://developer.apple.com/documentation/corenfc), all NFC enabled Apps will only work on iPhones 7 and 7 Plus or newer.
+
 ## Installation
 
 TICoreNFCExtensions is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,7 +24,8 @@ pod 'TICoreNFCExtensions'
 
 ## Author
 
-thomi137, tp@thomit.com
+Thomas Prosser, thomIT GmbH, tp@thomit.com
+Please feel free to submit pull requests.
 
 ## License
 
