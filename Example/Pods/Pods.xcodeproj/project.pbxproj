@@ -95,7 +95,7 @@
 		B19E9138B7F12E9C3464624EC503DCF9 /* World+DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B4CDEF78BF13177A9303C1E765E5F6 /* World+DSL.swift */; };
 		B2C151B20635A480E1937E3D2B509BB4 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85003248050785BFEF966D1E89E5A847 /* Async.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		B37D0376FCEB3133F44CF5F4416C58E1 /* CwlMachBadInstructionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = B4903A86024F5425CE9A8BE57C1F8E5A /* CwlMachBadInstructionHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B505FA751FB6447B007A0585 /* NFCNDEFPayloadMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505FA741FB6447B007A0585 /* NFCNDEFPayloadMimeType.swift */; };
+		B505FA761FB64873007A0585 /* NFCNDEFPayloadMimeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B505FA741FB6447B007A0585 /* NFCNDEFPayloadMimeType.swift */; };
 		BA9922CED25D648DC1FF799F8A25E274 /* ErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FAED8BD878439BC32BE461165E4E08 /* ErrorUtility.swift */; };
 		BC78AB4304F12FEDB3CE93D7F2C1BD9B /* ExampleHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301223B3EB74E21CDB1303C459B57231 /* ExampleHooks.swift */; };
 		BC7B9761322C74FA27969BD55833BA47 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6E1B1438113D3D4423FB3586E904A /* Errors.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -865,7 +865,6 @@
 				EF8548E0C37E8888D9DDC11ED89D3568 /* Predicate.swift in Sources */,
 				EAE2AAE5EB826B38978692984BB22FDD /* RaisesException.swift in Sources */,
 				EB3A73071ABA60E77E0704649637D8BD /* SatisfyAnyOf.swift in Sources */,
-				B505FA751FB6447B007A0585 /* NFCNDEFPayloadMimeType.swift in Sources */,
 				F3BAA36614ABDBC0538B0DEA99CF80A0 /* SourceLocation.swift in Sources */,
 				8170866E2ACE0ACFBC6D90081354EC65 /* Stringers.swift in Sources */,
 				3B3A88E074630B1EBC2139F4F70F0443 /* ThrowAssertion.swift in Sources */,
@@ -931,6 +930,7 @@
 				99ACD637CD5C9A4F001EB86673FE7757 /* NFCNDEFPayload+Parsing.swift in Sources */,
 				520CA55E94AB9ECEB17E675B63A3C5A6 /* NFCNDEFWellKnownTypes.swift in Sources */,
 				5163956653B647AF578ABDCD435D8034 /* TICoreNFCExtensions-dummy.m in Sources */,
+				B505FA761FB64873007A0585 /* NFCNDEFPayloadMimeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
