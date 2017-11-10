@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreNFC
+import TICoreNFCExtensions
 
 class ViewController: UIViewController, NFCNDEFReaderSessionDelegate {
     

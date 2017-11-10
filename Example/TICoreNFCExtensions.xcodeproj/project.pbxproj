@@ -41,6 +41,7 @@
 		768139E5ACFEFA5CD9A65D4F /* Pods-TICoreNFCExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICoreNFCExtensions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TICoreNFCExtensions_Tests/Pods-TICoreNFCExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9C7CE9F1173E91EC6595F256 /* Pods_TICoreNFCExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TICoreNFCExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B505FA711FB62874007A0585 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B505FA731FB62BCE007A0585 /* TICoreNFCExtensions_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TICoreNFCExtensions_Example.entitlements; sourceTree = "<group>"; };
 		B836633BE540D9D698A1C957 /* Pods-TICoreNFCExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICoreNFCExtensions_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TICoreNFCExtensions_Example/Pods-TICoreNFCExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C00D034F3FFEEFEF658F9D02 /* Pods-TICoreNFCExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TICoreNFCExtensions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TICoreNFCExtensions_Example/Pods-TICoreNFCExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C02626BDC26C3E69773E67D7 /* TICoreNFCExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TICoreNFCExtensions.podspec; path = ../TICoreNFCExtensions.podspec; sourceTree = "<group>"; };
@@ -81,6 +82,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				B505FA731FB62BCE007A0585 /* TICoreNFCExtensions_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for TICoreNFCExtensions */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -215,10 +217,17 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4PV47B4W65;
 						LastSwiftMigration = 0900;
+						SystemCapabilities = {
+							com.apple.NearFieldCommunicationTagReading = {
+								enabled = 1;
+							};
+						};
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4PV47B4W65;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -514,6 +523,8 @@
 			baseConfigurationReference = B836633BE540D9D698A1C957 /* Pods-TICoreNFCExtensions_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TICoreNFCExtensions_Example.entitlements;
+				DEVELOPMENT_TEAM = 4PV47B4W65;
 				INFOPLIST_FILE = TICoreNFCExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -529,6 +540,8 @@
 			baseConfigurationReference = C00D034F3FFEEFEF658F9D02 /* Pods-TICoreNFCExtensions_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TICoreNFCExtensions_Example.entitlements;
+				DEVELOPMENT_TEAM = 4PV47B4W65;
 				INFOPLIST_FILE = TICoreNFCExtensions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -543,6 +556,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 768139E5ACFEFA5CD9A65D4F /* Pods-TICoreNFCExtensions_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4PV47B4W65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -564,6 +578,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FFFF228CC5588DFA4ABF08A3 /* Pods-TICoreNFCExtensions_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 4PV47B4W65;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

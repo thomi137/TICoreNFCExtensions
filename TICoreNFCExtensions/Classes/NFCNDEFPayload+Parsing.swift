@@ -11,19 +11,19 @@ import CoreNFC
 @available(iOS 11.0, *)
 extension NFCNDEFPayload {
     
-    var typeString: String {
+    public var typeString: String {
         guard let retVal = String(data: self.type, encoding: .utf8) else { return "" }
         return retVal
     }
     
-    var firstByte: UInt8 {
+    public var firstByte: UInt8 {
         
         guard let firstByte = self.payload.first else { return 0x00 }
         return firstByte
         
     }
     
-    var parsedPayload: NDEFRTDType{
+   public var parsedPayload: NDEFRTDType{
         
         switch (self.typeNameFormat, self.typeString){
         case (.absoluteURI, _):
@@ -49,7 +49,7 @@ extension NFCNDEFPayload {
     }
 }
 
-enum NDEFRTDType{
+public enum NDEFRTDType{
     
     case U(parsedPayload: NFCNDEFUri)
     case T(parsedPayload: NFCNDEFText)
@@ -57,7 +57,7 @@ enum NDEFRTDType{
     
 }
 
-enum WellKnownNDEFURI: UInt8 {
+public enum WellKnownNDEFURI: UInt8 {
     
     case Full           = 0x00
     case HttpWww        = 0x01
