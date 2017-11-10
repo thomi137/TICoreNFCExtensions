@@ -31,7 +31,7 @@ extension NFCNDEFPayload {
         case (.empty, _):
             return .Unknown
         case (.media, _):
-            return .M(parsedPayload: NFCNDEFMimeType(statusByte: firstByte, payload: self.payload.suffix(from: 1)))
+            return .M(parsedPayload: NFCNDEFMimeType(payload: self.payload))
         case (.nfcExternal, _):
             return .Unknown
         case (.nfcWellKnown, let typeString) where typeString == "T":
