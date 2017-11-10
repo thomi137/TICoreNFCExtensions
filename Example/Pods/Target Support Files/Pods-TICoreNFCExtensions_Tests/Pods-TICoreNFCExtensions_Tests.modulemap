@@ -1,0 +1,6 @@
+framework module Pods_TICoreNFCExtensions_Tests {
+  umbrella header "Pods-TICoreNFCExtensions_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

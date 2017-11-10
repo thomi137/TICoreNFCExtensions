@@ -1,0 +1,22 @@
+{
+  "name": "TICoreNFCExtensions",
+  "version": "0.1.0",
+  "summary": "A short description of TICoreNFCExtensions.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/thomi137/TICoreNFCExtensions",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "thomi137": "tp@thomit.com"
+  },
+  "source": {
+    "git": "https://github.com/thomi137/TICoreNFCExtensions.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TICoreNFCExtensions/Classes/**/*"
+}

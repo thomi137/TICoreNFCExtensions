@@ -1,0 +1,6 @@
+framework module TICoreNFCExtensions {
+  umbrella header "TICoreNFCExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
