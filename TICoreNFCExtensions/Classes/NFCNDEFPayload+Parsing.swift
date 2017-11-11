@@ -51,8 +51,8 @@ extension NFCNDEFPayload {
 
 public enum NDEFRTDType{
     
-    case U(parsedPayload: NFCNDEFUri)
-    case T(parsedPayload: NFCNDEFText)
+    case U(parsedPayload: NFCNDEFWellKnownType)
+    case T(parsedPayload: NFCNDEFWellKnownType)
     case M(parsedPayload: NFCNDEFMimeType)
     case Unknown
     

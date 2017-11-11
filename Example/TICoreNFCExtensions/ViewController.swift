@@ -53,13 +53,13 @@ class ViewController: UIViewController, NFCNDEFReaderSessionDelegate {
                 switch record.parsedPayload{
                 case .U(let parsedPayload):
                     text = parsedPayload.getText()!
-                    NSLog("Record Type with type: \(type), contents: \(text)")
+                    NSLog("Record Type with type: \(type), properties: \(parsedPayload), contents: \(text)")
                 case .T(let parsedPayload):
                     text = parsedPayload.getText()!
-                    NSLog("Record Type with type: \(type), locale: \(parsedPayload.locale), encoding: \(parsedPayload.encoding) contents: \(text)")
+                    NSLog("Record Type with type: \(type), properties: \(parsedPayload), contents: \(text)")
                 case .M(let parsedPayload):
                     text = parsedPayload.getText()!
-                    NSLog("Record Type with type: \(type), contents: \(text)")
+                    NSLog("Record Type with type: \(type), properties: \(parsedPayload), contents: \(text)")
                 case .Unknown:
                     text = "Type unknown"
                     NSLog("Record Type with type: \(type), contents: \(text)")

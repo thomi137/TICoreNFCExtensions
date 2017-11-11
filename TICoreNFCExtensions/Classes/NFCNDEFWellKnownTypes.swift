@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol NFCNDEFWellKnownType{
+public protocol NFCNDEFWellKnownType : CustomStringConvertible {
     
     func getText() -> String?
     
 }
 
 public struct NFCNDEFText: NFCNDEFWellKnownType {
-    
+
     var statusByte: UInt8
     var payload: Data
     
@@ -44,6 +44,9 @@ public struct NFCNDEFText: NFCNDEFWellKnownType {
         return String(data: textBytes, encoding: encoding)
     }
     
+    public var description: String{
+        return "locale: \(locale), encoding: \(encoding)"
+    }
 }
 
 public struct NFCNDEFUri: NFCNDEFWellKnownType {
@@ -61,5 +64,12 @@ public struct NFCNDEFUri: NFCNDEFWellKnownType {
         return uriType.uriPrefix + uriAddress
         
     }
+    
+    public var description: String {
+        
+        return "prefix: \(self.uriType.uriPrefix)"
+        
+    }
+
     
 }
