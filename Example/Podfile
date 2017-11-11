@@ -1,3 +1,5 @@
+platform :ios, '11.1'
+inhibit_all_warnings!
 use_frameworks!
 
 target 'TICoreNFCExtensions_Example' do
@@ -7,6 +9,6 @@ target 'TICoreNFCExtensions_Example' do
     inherit! :search_paths
 
     pod 'Quick', '~> 1.2.0'
-  pod 'Nimble', '~> 7.0.2'
+    pod 'Nimble', '~> 7.0.2'
   end
 end
