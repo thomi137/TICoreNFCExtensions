@@ -5,7 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/TICoreNFCExtensions.svg?style=flat)](http://cocoapods.org/pods/TICoreNFCExtensions)
 [![Platform](https://img.shields.io/cocoapods/p/TICoreNFCExtensions.svg?style=flat)](http://cocoapods.org/pods/TICoreNFCExtensions)
 
-## Example
+## Motivation
+
+As of iOS 11, Apple opened up their NFC hardware so developers can make their apps read NFC Tags that carry payloads compliant to the [NDEF](http://sweet.ua.pt/andre.zuquete/Aulas/IRFID/11-12/docs/NFC%20Data%20Exchange%20Format%20(NDEF).pdf)
+
+## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
