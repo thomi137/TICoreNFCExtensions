@@ -79,7 +79,7 @@ public struct NFCNDEFUri: TINFCNDEFType {
     
     public var description: String {
         
-        return "URI type. URI: \(self.uriType.uriPrefix) + \(encodedPayload)"
+        return "URI type. URI: \(self.uriType.uriPrefix) + \(encodedPayload ?? "Invalid path")"
         
     }
     
